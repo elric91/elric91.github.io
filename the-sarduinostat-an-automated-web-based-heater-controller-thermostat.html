@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>The Sarduinostat : an automated & web based heater controller / thermostat</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">pingwee.net </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/diy.html">DIY</a></li>
+                    <li><a href="/category/scripts.html">scripts</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/the-sarduinostat-an-automated-web-based-heater-controller-thermostat.html" rel="bookmark"
+           title="Permalink to The Sarduinostat : an automated & web based heater controller / thermostat">The Sarduinostat : an automated & web based heater controller / thermostat</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-01-02T00:00:00+01:00">
+                Published: mer. 02 janvier 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/elrc.html">eLR!C</a>
+        </address>
+<p>In <a href="/category/diy.html">DIY</a>.</p>
+
+</footer><!-- /.post-info -->      <p>''this is an obsolete project''</p>
+<p>Inspired by some nice (and well documented) projects found on the arduino forum, I finally managed to release my first version of the Sarduinostat
+(as you may have guessed, the project fits in a sardine / pilchard box)</p>
+<p>Apart from being fully functionnal, the goal was to make it small enough to fit it in a sardine box (nicely painted by the way as it will be put on the wall)
+I used mainly semi built parts (i.e. including required caps &amp; resitors) to keep the project simple (no soldering required)
+As it is my first real arduino project (and I am new to C), I suspect part of the code can be optimized / cleaned ...</p>
+<p><strong>Parts :</strong>
+<em> a sardine box
+</em> Arduino nano clone
+<em> DS18B20 temperature sensor
+</em> TM1638 based 8X Seven Segments Display
+<em> ENC28J60 based ethernet card
+</em> a server for some of the enhanced functionnalities (i.e. collectd monitoring, access to http services)
+(less than 35€ if I did not make any mistake in calculations, all ordered from dx)</p>
+<p><strong>What it can already do</strong>
+<em> activate / deactivate the heater through a relay
+</em> multi-mode control : day, night, auto (program per 10 min step), off, force (force heating)
+<em> general status on a visible 8 x 7 segments display or simple web page
+</em> clear heating status through leds
+<em> manageable through panel buttons or through http services
+</em> dhcp / ntp enabled
+* interface to collectd / RRD for constant temperature monitoring</p>
+<p><strong>What it may do in the future</strong>
+<em> more (and cleaned) http services
+</em> allow to change program through a web page
+<em> manage a different program for each day of the week
+</em> more functions through the included web page (I need to free some memory)</p>
+<p>It will also look nicer than on the pictures once painted and the cable fitted inside. 8)</p>
+<p><img alt="image1" src="http://fhars.free.fr/img/sarduinostat_time.jpg"></p>
+<p><img alt="image3" src="http://fhars.free.fr/img/sarduinostat_with_services.png"></p>
+<p><img alt="image3" src="http://fhars.free.fr/img/sarduinostat_collectd.png"></p>
+<p>Here is the <a href="http://forum.arduino.cc/index.php?topic=140366.0|en">Reference post</a> on arduino forums</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="#">Some links here in the future</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://mamaot.fr/mastodon">Mastodon</a></li>
+                            <li><a href="#">this!</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

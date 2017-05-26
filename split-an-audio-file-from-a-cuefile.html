@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Split an audio file from a cuefile</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">pingwee.net </a></h1>
+                <nav><ul>
+                    <li><a href="/category/diy.html">DIY</a></li>
+                    <li class="active"><a href="/category/scripts.html">scripts</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/split-an-audio-file-from-a-cuefile.html" rel="bookmark"
+           title="Permalink to Split an audio file from a cuefile">Split an audio file from a cuefile</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2011-09-03T00:00:00+02:00">
+                Published: sam. 03 septembre 2011
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/elrc.html">eLR!C</a>
+        </address>
+<p>In <a href="/category/scripts.html">scripts</a>.</p>
+
+</footer><!-- /.post-info -->      <p>Il existe plusieurs techiques sous linux pour splitter un fichier audio (i.e. flac) à partir de son fichier cue.
+La plus universelle que j'aie trouvée (qui s'accomode par exemple de caractères bizarres dans les cuesheets) est de créer un fichier shell du type suivant :</p>
+<div class="highlight"><pre><span></span><span class="c1"># splitit.sh</span>
+cuebreakpoints *.cue <span class="p">|</span> shnsplit -o flac *.<span class="nv">$1</span> <span class="o">&amp;&amp;</span> cuetag *.cue split*.flac
+</pre></div>
+
+
+<p>et pour l'utiliser (en partant du principe que le fichier ".wv" à splitter et la cuesheet sont dans le même répertoire) :</p>
+<div class="highlight"><pre><span></span>~/splitit.sh wv
+</pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="#">Some links here in the future</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://mamaot.fr/mastodon">Mastodon</a></li>
+                            <li><a href="#">this!</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
